@@ -1,0 +1,114 @@
+@import "materialize.scss";
+*{
+	font-family:"Roboto",sans-serif;
+}
+$green:#27AD60;
+$dark:#443E44;
+$r1b1:#69D2E7;
+$r1b2:#A7DBDB;
+$r1b3:#E0E4CC;
+$r1b4:#F38630;
+$r1b5:#FA6900;
+$r2b1:#E94C6F;
+$r2b2:#542733;
+$r2b3:#5A6A62;
+$r2b4:#C6D5CD;
+$r2b5:#FDF200;
+$r3b1:#DB3340;
+$r3b2:#E8B71A;
+$r3b3:#F7EAC8;
+$r3b4:#1FDA9A;
+$r3b5:#28ABE3;
+$r4b1:#588C73;
+$r4b2:#F2E394;
+$r4b3:#F2AE72;
+$r4b4:#D96459;
+$r4b5:#8C4646;
+$r5b1:#D0C91F;
+$r5b2:#85C4B9;
+$r5b3:#008BBA;
+$r5b4:#DF514C;
+$r5b5:#DC403B;
+/*_________________________*/
+$r1t1:"#69D2E7";
+$r1t2:"#A7DBDB";
+$r1t3:"#E0E4CC";
+$r1t4:"#F38630";
+$r1t5:"#FA6900";
+$r2t1:"#E94C6F";
+$r2t2:"#542733";
+$r2t3:"#5A6A62";
+$r2t4:"#C6D5CD";
+$r2t5:"#FDF200";
+$r3t1:"#DB3340";
+$r3t2:"#E8B71A";
+$r3t3:"#F7EAC8";
+$r3t4:"#1FDA9A";
+$r3t5:"#28ABE3";
+$r4t1:"#588C73";
+$r4t2:"#F2E394";
+$r4t3:"#F2AE72";
+$r4t4:"#D96459";
+$r4t5:"#8C4646";
+$r5t1:"#D0C91F";
+$r5t2:"#85C4B9";
+$r5t3:"#008BBA";
+$r5t4:"#DF514C";
+$r5t5:"#DC403B";
+@mixin bgColor($color,$texto){
+	background-color:$color;
+	&:after{
+		content:$texto;
+	}
+}
+.header{
+	padding:20px;
+	background-color:$green;
+	height:100px;
+	.container{
+	width:90%;
+	}
+}
+#index-banner{
+	color:#FFFFFF;
+	line-height: 2;
+	.container{
+	width:90%;
+	}
+}
+.colorPalette .row{
+	color:$dark;
+	margin-bottom:10px;
+}
+.boxes{
+	width:20%;
+	float:left;
+	height:130px;
+	background-color:black;
+}
+/*--row:x,box:x row:x,text:x--*/
+.r1b1 {@include bgColor($r1b1,$r1t1);}
+.r1b2 {@include bgColor($r1b2,$r1t2);}
+.r1b3 {@include bgColor($r1b3,$r1t3);}
+.r1b4 {@include bgColor($r1b4,$r1t4);}
+.r1b5 {@include bgColor($r1b5,$r1t5);}
+.r2b1 {@include bgColor($r2b1,$r2t1);}
+.r2b2 {@include bgColor($r2b2,$r2t2); color:white}
+.r2b3 {@include bgColor($r2b3,$r2t3);}
+.r2b4 {@include bgColor($r2b4,$r2t4);}
+.r2b5 {@include bgColor($r2b5,$r2t5);}
+.r3b1 {@include bgColor($r3b1,$r3t1);}
+.r3b2 {@include bgColor($r3b2,$r3t2);}
+.r3b3 {@include bgColor($r3b3,$r3t3);}
+.r3b4 {@include bgColor($r3b4,$r3t4);}
+.r3b5 {@include bgColor($r3b5,$r3t5);}
+.r4b1 {@include bgColor($r4b1,$r4t1);}
+.r4b2 {@include bgColor($r4b2,$r4t2);}
+.r4b3 {@include bgColor($r4b3,$r4t3);}
+.r4b4 {@include bgColor($r4b4,$r4t4);}
+.r4b5 {@include bgColor($r4b5,$r4t5); color:white}
+.r5b1 {@include bgColor($r5b1,$r5t1);}
+.r5b2 {@include bgColor($r5b2,$r5t2);}
+.r5b3 {@include bgColor($r5b3,$r5t3);}
+.r5b4 {@include bgColor($r5b4,$r5t4);}
+.r5b5 {@include bgColor($r5b5,$r5t5);}
