@@ -3,6 +3,9 @@
 	font-family:"Roboto",sans-serif;
 }
 $green:#27AD60;
+$blue:#2C3E50;
+$progressOrange:#E67E22;
+$progressWhite:#DCD5D5;
 $dark:#443E44;
 $r1b1:#69D2E7;
 $r1b2:#A7DBDB;
@@ -61,20 +64,111 @@ $r5t5:"#DC403B";
 		content:$texto;
 	}
 }
+img{
+	max-width:100%
+}
+h1{
+	margin-top:0;
+}
+hr,#about p:first-child{
+	margin-bottom:40px;
+}
+hr{
+	width:20%;
+}
+.progress{
+	margin:15px 0 0 0px;
+	padding:3px;
+	border:2px solid $progressWhite;
+	border-radius:0;
+	background:$progressWhite;
+	.determinate{
+	background:$progressOrange;
+	}
+}
+#about img{
+	margin:10px 30px;
+}
+.row{
+	margin-bottom:0;
+}
+#about,#price,#clients,#contact{
+	background-color:$blue;
+	p,h1{
+		color:#FFFFFF;
+	}
+	hr{
+		border:none;
+		border-bottom:1px solid white;
+	}
+}
+.row .col.animationContainer{
+	margin:3% 5%;
+	padding:3% 5%;
+	&:hover{
+		background:#2A7257;
+	}
+}
+.animated{
+	margin:0 auto;
+	padding:25px;
+	width:150px;
+	height:150px;
+	background-color:#2C3E50;
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#2C3E50, endColorstr=#616D79);
+	background-image:-moz-linear-gradient(right, #2C3E50 50%, #616D79 50%,#616D79 60%,#6A7580 60%);
+	background-image:linear-gradient(right, #2C3E50 50%, #616D79 50%,#616D79 60%,#6A7580 60%);
+	background-image:-webkit-linear-gradient(right, #2C3E50 50%, #616D79 50%,#616D79 60%,#6A7580 60%);
+	background-image:-o-linear-gradient(right, #2C3E50 50%, #616D79 50%,#616D79 60%,#6A7580 60%);
+	background-image:-ms-linear-gradient(right, #2C3E50 50%, #616D79 50%,#616D79 60%,#6A7580 60%);
+	background-image:-webkit-gradient(linear, right bottom, left bottom, color-stop(50%,#2C3E50), color-stop(50%,#616D79),color-stop(60%,#616D79),color-stop(60%,#6A7580));
+	&:hover{
+		background-color:#A96931;
+		background-image:none;
+	}
+}
+
+footer,#service,#team,.header,.amount{
+	background-color:$green;
+	hr{
+		border:none;
+		border-bottom:1px solid white;
+	}
+}
 .header{
 	padding:20px;
-	background-color:$green;
 	height:100px;
 	.container{
 	width:90%;
 	}
 }
-#index-banner{
+#index-banner,#service,#team{
 	color:#FFFFFF;
-	line-height: 2;
+	h4{
+	line-height: 1.5;
+	}
 	.container{
 	width:90%;
 	}
+}
+.priceBox span{
+	padding:20px;
+}
+section{
+	padding:50px 0px;
+}
+.amount{
+	p:first-child{
+		font-size:30px;
+		line-height:0.5;
+	}
+	.small,p:first-child{
+	display:inline-block
+	}
+}
+.small{
+	font-size:12px;
+	margin-top:5px;
 }
 .colorPalette .row{
 	color:$dark;
@@ -86,7 +180,7 @@ $r5t5:"#DC403B";
 	height:130px;
 	background-color:black;
 }
-/*--row:x,box:x row:x,text:x--*/
+/*--row:y,box:x row:y,text:x--*/
 .r1b1 {@include bgColor($r1b1,$r1t1);}
 .r1b2 {@include bgColor($r1b2,$r1t2);}
 .r1b3 {@include bgColor($r1b3,$r1t3);}

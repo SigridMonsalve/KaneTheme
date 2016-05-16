@@ -6151,18 +6151,98 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   font-family: "Roboto",sans-serif; }
 
 /*_________________________*/
+img {
+  max-width: 100%; }
+
+h1 {
+  margin-top: 0; }
+
+hr, #about p:first-child {
+  margin-bottom: 40px; }
+
+hr {
+  width: 20%; }
+
+.progress {
+  margin: 15px 0 0 0px;
+  padding: 3px;
+  border: 2px solid #DCD5D5;
+  border-radius: 0;
+  background: #DCD5D5; }
+  .progress .determinate {
+    background: #E67E22; }
+
+#about img {
+  margin: 10px 30px; }
+
+.row {
+  margin-bottom: 0; }
+
+#about, #price, #clients, #contact {
+  background-color: #2C3E50; }
+  #about p, #about h1, #price p, #price h1, #clients p, #clients h1, #contact p, #contact h1 {
+    color: #FFFFFF; }
+  #about hr, #price hr, #clients hr, #contact hr {
+    border: none;
+    border-bottom: 1px solid white; }
+
+.row .col.animationContainer {
+  margin: 3% 5%;
+  padding: 3% 5%; }
+  .row .col.animationContainer:hover {
+    background: #2A7257; }
+
+.animated {
+  margin: 0 auto;
+  padding: 25px;
+  width: 150px;
+  height: 150px;
+  background-color: #2C3E50;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#2C3E50, endColorstr=#616D79);
+  background-image: -moz-linear-gradient(right, #2C3E50 50%, #616D79 50%, #616D79 60%, #6A7580 60%);
+  background-image: linear-gradient(right, #2C3E50 50%, #616D79 50%, #616D79 60%, #6A7580 60%);
+  background-image: -webkit-linear-gradient(right, #2C3E50 50%, #616D79 50%, #616D79 60%, #6A7580 60%);
+  background-image: -o-linear-gradient(right, #2C3E50 50%, #616D79 50%, #616D79 60%, #6A7580 60%);
+  background-image: -ms-linear-gradient(right, #2C3E50 50%, #616D79 50%, #616D79 60%, #6A7580 60%);
+  background-image: -webkit-gradient(linear, right bottom, left bottom, color-stop(50%, #2C3E50), color-stop(50%, #616D79), color-stop(60%, #616D79), color-stop(60%, #6A7580)); }
+  .animated:hover {
+    background-color: #A96931;
+    background-image: none; }
+
+footer, #service, #team, .header, .amount {
+  background-color: #27AD60; }
+  footer hr, #service hr, #team hr, .header hr, .amount hr {
+    border: none;
+    border-bottom: 1px solid white; }
+
 .header {
   padding: 20px;
-  background-color: #27AD60;
   height: 100px; }
   .header .container {
     width: 90%; }
 
-#index-banner {
-  color: #FFFFFF;
-  line-height: 2; }
-  #index-banner .container {
+#index-banner, #service, #team {
+  color: #FFFFFF; }
+  #index-banner h4, #service h4, #team h4 {
+    line-height: 1.5; }
+  #index-banner .container, #service .container, #team .container {
     width: 90%; }
+
+.priceBox span {
+  padding: 20px; }
+
+section {
+  padding: 50px 0px; }
+
+.amount p:first-child {
+  font-size: 30px;
+  line-height: 0.5; }
+.amount .small, .amount p:first-child {
+  display: inline-block; }
+
+.small {
+  font-size: 12px;
+  margin-top: 5px; }
 
 .colorPalette .row {
   color: #443E44;
@@ -6174,7 +6254,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   height: 130px;
   background-color: black; }
 
-/*--row:x,box:x row:x,text:x--*/
+/*--row:y,box:x row:y,text:x--*/
 .r1b1 {
   background-color: #69D2E7; }
   .r1b1:after {
