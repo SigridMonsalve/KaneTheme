@@ -64,8 +64,18 @@ $r5t5:"#DC403B";
 		content:$texto;
 	}
 }
+@mixin button($margin,$pad){
+	background:#443E44;
+	color:white;
+	padding:$pad;
+	margin:$margin;
+	border:none;
+}
+@mixin pd($pd1,$pd2){
+	padding:$pd1 $pd2;
+}
 img{
-	max-width:100%
+	max-width:100%;
 }
 h1{
 	margin-top:0;
@@ -75,6 +85,11 @@ hr,#about p:first-child{
 }
 hr{
 	width:20%;
+}
+.container{
+	hr{
+		margin-bottom:20px;
+	}
 }
 .progress{
 	margin:15px 0 0 0px;
@@ -103,10 +118,17 @@ hr{
 	}
 }
 .row .col.animationContainer{
-	margin:3% 5%;
-	padding:3% 5%;
+	@include pd(30px,30px);
 	&:hover{
 		background:#2A7257;
+		.animated{
+			background-color:#A96931;
+			background-image:none;
+		}
+	}
+}
+#service,#price{
+	button{@include button(20px,10px);
 	}
 }
 .animated{
@@ -122,10 +144,6 @@ hr{
 	background-image:-o-linear-gradient(right, #2C3E50 50%, #616D79 50%,#616D79 60%,#6A7580 60%);
 	background-image:-ms-linear-gradient(right, #2C3E50 50%, #616D79 50%,#616D79 60%,#6A7580 60%);
 	background-image:-webkit-gradient(linear, right bottom, left bottom, color-stop(50%,#2C3E50), color-stop(50%,#616D79),color-stop(60%,#616D79),color-stop(60%,#6A7580));
-	&:hover{
-		background-color:#A96931;
-		background-image:none;
-	}
 }
 
 footer,#service,#team,.header,.amount{
@@ -151,8 +169,30 @@ footer,#service,#team,.header,.amount{
 	width:90%;
 	}
 }
-.priceBox span{
+#team{
+	img{
+		width:70%;
+		margin-top:40px;
+		border-radius:10px;
+	}
+	.s3{@include pd(50px,50px);
+		p,span{
+		color:#C1C1C1;
+		}
+		span{
+			font-size:20px;
+		}
+		.xsmall{
+		color:black;
+		}
+	}
+}
+.priceBox{
+	border:1px solid #27AD60;
+	span{
 	padding:20px;
+	margin:10px 0px;
+	}
 }
 section{
 	padding:50px 0px;
@@ -169,6 +209,9 @@ section{
 .small{
 	font-size:12px;
 	margin-top:5px;
+}
+.xsmall{
+	font-size:11px;
 }
 .colorPalette .row{
 	color:$dark;
