@@ -6197,7 +6197,7 @@ hr {
       background-color: #A96931;
       background-image: none; }
 
-#service button, #price button {
+#service button, #price button, footer button, #contact button {
   background: #443E44;
   color: white;
   padding: 10px;
@@ -6230,11 +6230,11 @@ footer, #service, #team, .header, .amount {
   .header .container {
     width: 90%; }
 
-#index-banner, #service, #team {
+#index-banner, #service, #team, #price {
   color: #FFFFFF; }
-  #index-banner h4, #service h4, #team h4 {
+  #index-banner h4, #service h4, #team h4, #price h4 {
     line-height: 1.5; }
-  #index-banner .container, #service .container, #team .container {
+  #index-banner .container, #service .container, #team .container, #price .container {
     width: 90%; }
 
 #team img {
@@ -6250,9 +6250,19 @@ footer, #service, #team, .header, .amount {
   #team .s3 .xsmall {
     color: black; }
 
-.priceBox span {
-  padding: 20px;
-  margin: 10px 0px; }
+#price .priceBox {
+  margin: 50px 10px 30px 10px;
+  border: 1px solid #27AD60; }
+  #price .priceBox p {
+    padding: 20px;
+    margin: 0; }
+  #price .priceBox .title {
+    color: #C1C1C1; }
+  #price .priceBox .dataWhite {
+    background: #F5F5F5;
+    color: #2C3E50; }
+  #price .priceBox .dataBrown {
+    background: #8F5F38; }
 
 section {
   padding: 50px 0px; }
@@ -6279,6 +6289,47 @@ section {
   float: left;
   height: 130px;
   background-color: black; }
+
+#media span {
+  color: white;
+  margin: 50px 10px; }
+
+footer {
+  color: #FFFFFF; }
+  footer i {
+    float: left;
+    display: inline;
+    margin-right: 5px; }
+  footer .content {
+    padding-left: 80px; }
+    footer .content p {
+      margin: 5px 0; }
+  footer .center div {
+    display: inline-block;
+    border: 1px solid #443E44; }
+    footer .center div p, footer .center div input {
+      height: 30px;
+      padding: 5px;
+      margin: 0px;
+      float: left; }
+    footer .center div p {
+      width: 20%;
+      color: #E67E22;
+      background: #443E44;
+      font-size: 18px; }
+    footer .center div input {
+      width: 80%;
+      color: grey;
+      background: white;
+      box-sizing: border-box; }
+
+.bottom {
+  width: 90%;
+  color: black; }
+  .bottom span {
+    color: white; }
+  .bottom .scrollUp {
+    float: right; }
 
 /*--row:y,box:x row:y,text:x--*/
 .r1b1 {

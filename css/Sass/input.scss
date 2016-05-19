@@ -127,7 +127,7 @@ hr{
 		}
 	}
 }
-#service,#price{
+#service,#price,footer,#contact{
 	button{@include button(20px,10px);
 	}
 }
@@ -153,6 +153,7 @@ footer,#service,#team,.header,.amount{
 		border-bottom:1px solid white;
 	}
 }
+
 .header{
 	padding:20px;
 	height:100px;
@@ -160,7 +161,7 @@ footer,#service,#team,.header,.amount{
 	width:90%;
 	}
 }
-#index-banner,#service,#team{
+#index-banner,#service,#team,#price{
 	color:#FFFFFF;
 	h4{
 	line-height: 1.5;
@@ -187,11 +188,22 @@ footer,#service,#team,.header,.amount{
 		}
 	}
 }
-.priceBox{
+#price .priceBox{
+	margin:50px 10px 30px 10px;;
 	border:1px solid #27AD60;
-	span{
+	p{
 	padding:20px;
-	margin:10px 0px;
+	margin:0;
+	}
+	.title{
+		color:#C1C1C1;
+	}
+	.dataWhite{
+		background:#F5F5F5;
+		color:#2C3E50;
+	}
+	.dataBrown{
+		background:#8F5F38;
 	}
 }
 section{
@@ -222,6 +234,59 @@ section{
 	float:left;
 	height:130px;
 	background-color:black;
+}
+#media{
+	span{
+		color:white;
+		margin:50px 10px;
+	}
+}
+footer{
+	color:#FFFFFF;
+	i{
+		float:left;
+		display:inline;
+		margin-right:5px;
+	}
+	.content{
+		padding-left:80px;
+		p{
+			margin:5px 0;
+		}
+	}
+	.center div{
+		display:inline-block;
+		border:1px solid #443E44;
+		p,input{
+			height:30px;
+			padding:5px;
+			margin:0px;
+			float:left;
+		}
+		p{
+			width:20%;
+			color:#E67E22;
+			background:#443E44;
+			font-size:18px;
+		}
+		input{
+			width:80%;
+			color:grey;
+			background:white;
+			box-sizing:border-box;
+		}	
+	}
+
+}
+.bottom{
+	width:90%;
+	color:black;
+	span{
+		color:white;
+	}
+	.scrollUp{
+		float:right;
+	}
 }
 /*--row:y,box:x row:y,text:x--*/
 .r1b1 {@include bgColor($r1b1,$r1t1);}
